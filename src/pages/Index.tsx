@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import GameCard from "@/components/GameCard";
 import AboutMe from "@/components/AboutMe";
 import CodeBackground from "@/components/CodeBackground";
+import VideoShowcase from "@/components/VideoShowcase";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -14,31 +15,56 @@ const initialGames = [
     title: "Build a base to survive",
     description:
       "A build to survive game where you build to defend yourself from enemies.",
-    imageUrl: "../images/Banana.png",
+    imageUrl: "/images/Build.png",
     link: "https://www.roblox.com/games/70799674016060/Build-a-Base-to-Survive",
   },
   {
     id: 2,
-    title: "Dungeon Crawler",
+    title: "Obbies",
     description:
-      "A -style dungeon crawler with modern mechanics and challenging puzzles.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=1500",
-    link: "https://example.com/game2",
+      "I've worked on a lot of obbies and I'm proficient in developing these systems.",
+    imageUrl: "/images/Obby.png",
+    link: "https://www.roblox.com/games/84454808342722/YOU-WILL-CRY-OBBY",
+  },
+];
+
+const sampleVideos = [
+  {
+    id: 1,
+    title: "FPS system",
+    description:
+      "A FPS system I've developed recently, structured with OOP and used Rojo.",
+    videoUrl: "/videos/FPS.mp4",
+    thumbnail: "/images/FPS.png",
+  },
+  {
+    id: 2,
+    title: "Minigames",
+    description:
+      "A minigames game with 17 minigames fully scripted by me, let me know if you wanna see more of it.",
+    videoUrl: "/videos/MinigamesSystem.mp4",
+    thumbnail: "/images/Minigames.png",
   },
   {
     id: 3,
-    title: "Strategy Commander",
+    title: "Dealership System",
     description:
-      "Real-time strategy game where you command armies and conquer territories.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1599409636295-e3cf3538f212?auto=format&fit=crop&q=80&w=1500",
-    link: "https://example.com/game3",
+      "A dealership system I developed, combined with profile store to save purchased cars.",
+    videoUrl: "/videos/Dealership.mp4",
+    thumbnail: "/images/Dealership.png",
+  },
+  {
+    id: 3,
+    title: "3D Button",
+    description: "An example of my skills in scripting UI and tweening.",
+    videoUrl: "/videos/3DButton.mp4",
+    thumbnail: "/images/3DButton.png",
   },
 ];
 
 const Index = () => {
   const [games, setGames] = useState(initialGames);
+  const [videos, setVideos] = useState(sampleVideos);
 
   useEffect(() => {
     // You could fetch your games data from an API here
@@ -58,20 +84,28 @@ const Index = () => {
         {/* Hero Section */}
         <section className="flex flex-col items-center justify-center min-h-[60vh] text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-            Game Developer Portfolio
+            Hey!
           </h1>
           <p className="text-xl md:text-2xl max-w-2xl text-blue-100 mb-8">
-            Creating immersive gaming experiences with cutting-edge technology
+            I'm Teddy, a professional roblox scripter
           </p>
 
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
             <a
-              href="https://discordapp.com/users/903247827164090378"
+              href="https://discord.com/users/903247827164090378"
               className="flex items-center gap-2"
             >
               Contact Me
             </a>
           </Button>
+        </section>
+
+        {/* Video Showcase Section */}
+        <section id="video-showcase" className="py-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-white text-center">
+            System Demonstrations
+          </h2>
+          <VideoShowcase videos={videos} />
         </section>
 
         {/* Projects Section */}
@@ -101,7 +135,7 @@ const Index = () => {
           </p>
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
             <a
-              href="https://discordapp.com/users/903247827164090378"
+              href="https://discord.com/users/903247827164090378"
               className="flex items-center gap-2"
             >
               Contact Me

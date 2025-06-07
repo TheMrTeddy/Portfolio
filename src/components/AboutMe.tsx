@@ -16,7 +16,8 @@ const AboutMe = () => {
 
           <p>
             With 2.5 years of experience developing roblox games, I have the
-            experience necessary to complete your games.
+            experience necessary to complete your games. During my 2.5 years on
+            roblox, I've accumulated a total of 40 million contributed visits.
           </p>
 
           <p>
@@ -28,16 +29,21 @@ const AboutMe = () => {
           <div className="pt-4">
             <h3 className="text-xl font-bold text-white mb-3">Skills</h3>
             <div className="flex flex-wrap gap-2">
-              {["Roblox Scripting", "Blender modelling", "Problem Solving"].map(
-                (skill) => (
-                  <span
-                    key={skill}
-                    className="px-3 py-1 rounded-full bg-blue-800/50 text-blue-200 border border-blue-700 text-sm"
-                  >
-                    {skill}
-                  </span>
-                )
-              )}
+              {[
+                "Roblox Scripting",
+                "Deep understanding of computers",
+                "Problem Solving",
+                "Rojo",
+                "Knit",
+                "Profile Store",
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="px-3 py-1 rounded-full bg-blue-800/50 text-blue-200 border border-blue-700 text-sm"
+                >
+                  {skill}
+                </span>
+              ))}
             </div>
           </div>
         </div>
