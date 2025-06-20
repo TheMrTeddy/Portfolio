@@ -34,31 +34,31 @@ const sampleVideos = [
     title: "FPS system",
     description:
       "A FPS system I've developed recently, structured with OOP and used Rojo.",
-    videoUrl: "/videos/FPS.mp4",
-    thumbnail: "/images/FPS.png",
+    videoUrl: "/Portfolio//videos/FPS.mp4",
+    thumbnail: "/Portfolio//images/FPS.png",
   },
   {
     id: 2,
     title: "Minigames",
     description:
       "A minigames game with 17 minigames fully scripted by me, let me know if you wanna see more of it.",
-    videoUrl: "/videos/MinigamesSystem.mp4",
-    thumbnail: "/images/Minigames.png",
+    videoUrl: "/Portfolio//videos/MinigamesSystem.mp4",
+    thumbnail: "/Portfolio//images/Minigames.png",
   },
   {
     id: 3,
     title: "Dealership System",
     description:
       "A dealership system I developed, combined with profile store to save purchased cars.",
-    videoUrl: "/videos/Dealership.mp4",
-    thumbnail: "/images/Dealership.png",
+    videoUrl: "/Portfolio//videos/Dealership.mp4",
+    thumbnail: "/Portfolio//images/Dealership.png",
   },
   {
     id: 3,
     title: "3D Button",
     description: "An example of my skills in scripting UI and tweening.",
-    videoUrl: "/videos/3DButton.mp4",
-    thumbnail: "/images/3DButton.png",
+    videoUrl: "/Portfolio//videos/3DButton.mp4",
+    thumbnail: "/Portfolio//images/3DButton.png",
   },
 ];
 
