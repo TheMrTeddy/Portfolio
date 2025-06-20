@@ -15,7 +15,7 @@ const initialGames = [
     title: "Build a base to survive",
     description:
       "A build to survive game where you build to defend yourself from enemies.",
-    imageUrl: "/images/Build.png",
+    imageUrl: "/Portfolio/images/Build.png",
     link: "https://www.roblox.com/games/70799674016060/Build-a-Base-to-Survive",
   },
   {
@@ -23,7 +23,7 @@ const initialGames = [
     title: "Obbies",
     description:
       "I've worked on a lot of obbies and I'm proficient in developing these systems.",
-    imageUrl: "/images/Obby.png",
+    imageUrl: "/Portfolio/images/Obby.png",
     link: "https://www.roblox.com/games/84454808342722/YOU-WILL-CRY-OBBY",
   },
 ];
